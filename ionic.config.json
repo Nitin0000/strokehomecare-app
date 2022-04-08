@@ -1,0 +1,7 @@
+{
+  "name": "StrokeHomeCare",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
