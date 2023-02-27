@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{'SIDEMENU_CONTACT' | translate}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="contentBox">
+    <div class="callBox">
+      <p>{{'CONTACT_HAVE_QUESTIONS' | translate}}
+    </p>
+
+      <p>
+        {{'CONTACT_CALL_US' | translate}}
+      </p>
+      <h1 class="phone" (click)="startCall(userData.center.center_helpline_number)">
+        {{userData.center.center_helpline_number}}
+      </h1>
+
+    </div>
+    <div class="locateBox">
+      <p>
+        {{'CONTACT_VISIT_US' | translate}}
+      </p>
+      <h1 class="department">
+          {{userData.center.centre_name}}
+          <br>
+          {{userData.center.centre_address}}, <br>{{userData.center.center_city}}
+      </h1>
+
+    </div>
+  </div>
+
+  <!-- <div>
+    <p>
+      <strong>In case of any query, you can contact to </strong>
+    </p>
+    <ul>
+      <li>
+        <p (tap)="startCall('8360371080')">
+          Mobile no. 8360371080
+        </p>
+      </li>
+    </ul>
+    
+  </div>
+
+  <div>
+    <p>
+      <strong>किसी भी</strong>
+      <strong>प्रश्न</strong>
+      <strong>के</strong>
+      <strong>मामले</strong>
+      <strong>में</strong>
+      <strong>आप</strong>
+      <strong>इनसे</strong>
+      <strong>संपर्क</strong>
+      <strong>कर</strong>
+      <strong>सकते</strong>
+      <strong>हैं</strong>
+      <strong>-</strong>
+    </p>
+    <ul>
+      <li>
+        <p>मोबाइल- 8360371080</p>
+      </li>
+    </ul>    
+  </div> -->
+</ion-content>

@@ -1,0 +1,40 @@
+ion-content{
+    --padding-start: 10px;
+    --padding-end: 10px;
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+}
+
+.progress-outer {
+    width: 91%;
+    margin: 15px 15px;
+    padding: 0px;
+    text-align: center;
+    background-color: #f4f4f4;
+    border: 0px solid #dcdcdc;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.progress-inner {
+    min-width: 15%;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 7px;
+    border-radius: 20px;
+    background-color: var(--ion-color-primary);
+}
+
+.description{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+    padding-bottom:20px;
+    margin-bottom: 20px;
+    font-family: "Lato Regular";
+    color: var(--ion-color-dark-tint);
+    span{
+        color: var(--ion-color-primary);
+    }
+}

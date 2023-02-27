@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{'SIDEMENU_SETTINGS' | translate}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list lines="full">
+    <ion-item text-wrap (click)="gotoAboutPage()">
+      {{'SIDEMENU_ABOUT_APP' | translate}}
+      <ion-icon item-end name="ios-arrow-forward-outline"></ion-icon>
+    </ion-item>
+    <ion-item text-wrap (click)="gotoContactPage()">
+      {{'SIDEMENU_CONTACT' | translate}}
+      <ion-icon item-end name="ios-arrow-forward-outline"></ion-icon>
+    </ion-item>
+  </ion-list>
+
+  <ion-list style="margin-top: 20px">
+    <ion-radio-group
+      [(ngModel)]="currentLanguage"
+      (ionChange)="changeLanguage()"
+    >
+      <ion-item-divider color="primary" sticky="true">
+        <ion-label> {{'LOGIN_LANGUAGE' | translate}} </ion-label>
+      </ion-item-divider>
+
+      <ion-item *ngFor="let language of languages">
+        <ion-label>{{language.name}}</ion-label>
+        <ion-radio value="{{language.value}}"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+
+  <div style="font-weight: bold; text-align: center; padding: 10px">
+    App version: {{versionNumber}}
+  </div>
+</ion-content>

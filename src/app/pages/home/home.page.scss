@@ -1,0 +1,36 @@
+ion-content {
+  --background: #fffbf7; /* Old browsers */  
+}
+.videosection {
+  position: relative;
+
+  img.play_icon {
+    position: absolute;
+    z-index: 9999;
+    width: 50px !important;
+    height: 50px !important;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .back_image {
+    z-index: 99;
+    width: 100%;
+    max-height: 220px;
+  }
+}
+
+ion-list{
+  margin-top: 0px;
+  background: none !important;
+  padding-top: 10px;
+  ion-item{
+    padding: 10px 0px 10px 0px;
+    background: #fff !important;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+  }  
+}

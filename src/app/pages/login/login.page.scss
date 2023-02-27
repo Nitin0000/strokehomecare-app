@@ -1,0 +1,132 @@
+ion-content {
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#eabf9b+0,fffbf7+20 */
+--background: #eabf9b; /* Old browsers */
+--background: -moz-linear-gradient(top,  #eabf9b 0%, #fffbf7 20%); /* FF3.6-15 */
+--background: -webkit-linear-gradient(top,  #eabf9b 0%,#fffbf7 20%); /* Chrome10-25,Safari5.1-6 */
+--background: linear-gradient(to bottom,  #eabf9b 0%,#fffbf7 20%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eabf9b', endColorstr='#fffbf7',GradientType=0 ); /* IE6-9 */
+
+}
+
+ion-text {
+  p.backbutton {
+    text-align: center !important;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+.contentBox {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: scroll;
+
+  .logoSection {
+    background: #fff;
+    text-align: center;
+    box-shadow: 0px 0px 10px #cccccc;
+    margin-bottom: 10px;
+    border-end-start-radius: 20px;
+    border-end-end-radius: 20px;
+    img {
+      margin: 50px 0px;
+      width: auto;
+      min-width: 100px;
+      max-width: 60%;
+    }
+  }
+
+  .loginForm {
+    padding: 10px 20px;
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      line-height: 26px;
+      font-family: "Lato Bold";
+    }
+    p {
+      text-align: center;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .image_uploader {
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 10px;
+      img {
+        margin-left: -15px;
+      }
+    }
+
+    ion-button {
+      margin-bottom: 20px;
+    }
+
+    .formControlCustom {
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      border-radius: 4px;
+      border-color: var(--ion-color-light-grey);
+      border-style: solid;
+      border-width: 1px;
+      margin-top: 5px;
+      max-width: 100%;
+      width: 100%;
+      padding: 7px;
+      margin-bottom: 12px;
+
+      .countryCode {
+        font-size: 16px;
+        color: var(--ion-color-black);
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    }
+
+    .formControl {
+      margin-bottom: 15px;
+
+      ion-label {
+        margin-bottom: 10px !important;
+        color: var(--ion-color-grey);
+        font-size: 13px;
+      }
+      ion-input {
+        --placeholder-font-weight: normal;
+        border-radius: 4px;
+        border-color: var(--ion-color-light-grey);
+        border-style: solid;
+        border-width: 1px;
+        padding: 7px !important;
+        margin-top: 5px;
+        background: #fff;
+      }
+
+      ion-list.radioBtnList {
+        border-radius: 4px;
+        border-color: var(--ion-color-light-grey);
+        border-style: solid;
+        border-width: 1px;
+        ion-item {
+          border-bottom: 1px solid var(--ion-color-light-grey);
+        }
+        ion-item:last-child {
+          border-bottom: 0px;
+        }
+      }
+
+      ion-select {
+        border-radius: 4px;
+        border-color: var(--ion-color-light-grey);
+        border-style: solid;
+        border-width: 1px;
+        padding-left: 15px !important;
+        margin-top: 5px;
+      }
+    }
+  }
+}

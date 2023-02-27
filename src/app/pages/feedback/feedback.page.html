@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{'HOME_FEEDBACK' | translate}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="description">{{'FEEDBACK_DESC' | translate}}</div>
+
+  <div class="formsection">
+    <br /><br />
+    <div class="progress-outer" *ngIf="showProgressBar">
+      <div
+        class="progress-inner"
+        [ngStyle]="{'width': uploadProgress.progress+'%'}"
+      >
+        {{uploadProgress.progress}}%
+      </div>
+    </div>
+
+    <ion-button color="primary" expand="block" (click)="recordVideo()">
+      {{'FEEDBACK_UPLOAD_VIDEO' | translate}}
+    </ion-button>
+  </div>
+</ion-content>

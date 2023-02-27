@@ -1,0 +1,444 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{currentSectionType | translate}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="formSection">
+    <div *ngIf="currentSectionType == 'SYMPTOMS_HAS_BEDSORE'">
+      <div
+        ion-text
+        color="dark"
+        class="description"
+        text-left
+        *ngIf="currentLanguage == 'en'"
+      >
+        <p>
+          <strong>What is bedsore? :-</strong>
+        </p>
+        <p>
+          A stroke patient who is in bedridden state can develop wounds on the
+          skin which is called a bedsore. Bedsores can develop when skin and
+          underlying parts of the patients&rsquo; body are compressed between
+          bony prominence (bones on which our body is supported) and bed or
+          chair for a prolonged period of time.
+        </p>
+        <p>
+          <strong>There</strong>
+          <strong>are four stages of development of a bedsore:- </strong>
+        </p>
+        <ul>
+          <li>
+            In stage 1, there is no break or tears in the skin. The skin often
+            appears reddened and warmer.
+          </li>
+          <li>
+            At&nbsp;stage 2, there is a breakage in the skin. It may be painful.
+            It can look like a scrape or abrasion,&nbsp;blister in the skin.
+          </li>
+          <li>
+            During&nbsp;stage 3, the sore gets worse and extends into the tissue
+            beneath the skin. It may be painful.
+          </li>
+          <li>
+            At&nbsp;stage 4, the pressure sore is very deep, causing extensive
+            damage to deeper tissues, muscles, tendons, bones and joints.
+          </li>
+        </ul>
+        <p>
+          <img src="assets/imgs/bedsore_english.png" />
+        </p>
+        <p style="text-align: center">
+          <strong
+            >Figure 1: Different stages of bedsore at buttock region</strong
+          >
+        </p>
+        <p style="text-align: center">&nbsp;</p>
+        <p>
+          <strong>Areas of bedsores in different position:-</strong>
+        </p>
+        <p>
+          There are certain specific areas of the body which are more prone to
+          develop bedsores. These areas are:
+        </p>
+        <p>
+          <strong>In flat or sitting position:</strong> Back of the head,
+          shoulder, elbow, lower back, buttock, and heel.
+        </p>
+        <p>
+          <strong>In side lying position: </strong>Ear, shoulder, elbow, hip,
+          thigh, knee, leg, ankle, and heel.
+        </p>
+        <p>
+          <img src="assets/imgs/bedsore_parts_english.png" />
+        </p>
+        <p style="text-align: center">
+          <strong>Figure 2: Areas of bedsores in different position</strong>
+        </p>
+      </div>
+      <div
+        ion-text
+        color="dark"
+        class="description"
+        text-left
+        *ngIf="currentLanguage == 'hi'"
+      >
+        <p>
+          <strong>बैडसोर</strong>
+          <strong>या</strong>
+          <strong>बिस्तरी</strong>
+          <strong>घाव</strong>
+          <strong>क्या</strong>
+          <strong>है</strong>
+          <strong> ?</strong>
+        </p>
+        <p>
+          अधरंग के मरीज की त्वचा पर लम्बे समय तक बिस्तर पर पड़े रहने के कारण घाव
+          बन जातें हैं जिन्हें हम बैडसोर या बिस्तरी घाव कहते हैं | बैडसोर या
+          बिस्तरी घाव मरीज की हड्डियों वाले हिस्से और पलंग या बिस्तर के बीच
+          त्वचा और त्वचा के नीचे उत्तकों पर लम्बे समय तक दबाव पड़ने के कारण बनते
+          हैं |
+        </p>
+        <p>
+          <strong>बैडसोर</strong>
+          <strong>या</strong>
+          <strong>बिस्तरी</strong>
+          <strong>घाव</strong>
+          <strong>के</strong>
+          <strong>बढ़ने</strong>
+          <strong>की</strong>
+          <strong>चार</strong>
+          <strong>अवस्थाएं</strong>
+          <strong>होती</strong>
+          <strong>हैं</strong>
+          <strong> :</strong>
+        </p>
+        <p>
+          <strong>पहली</strong>
+          <strong>अवस्था</strong>
+          <strong> : </strong>इसमें त्वचा फटती नहीं है | लेकिन त्वचा में दर्द,
+          लाली या त्वचा गर्म हो सकती हैं |
+        </p>
+        <p>
+          <strong>दूसरी</strong>
+          <strong>अवस्था</strong> : इस अवस्था में त्वचा फट जाती है और घाव बन
+          जाता है | इसमें दर्द भी हो सकता है | एक छाला या गड्ढा सा भी बन जाता है
+          |
+        </p>
+        <p>
+          <strong>तीसरी</strong>
+          <strong>अवस्था</strong>
+          <strong>:</strong> इस अवस्था में स्थति और भी गंभीर हो जाती है | त्वचा
+          की गहराई में घाव बन जाता है | इसमें दर्द भी हो सकता है |
+        </p>
+        <p>
+          <strong>चौथी</strong>
+          <strong>अवस्था</strong>
+          <strong>:</strong> इस अवस्था में घाव बहुत गहरा हो जाता है | घाव मांस
+          पेशियाँ, हड्डियाँ एवम जोड़ में भी फैल जाता है|
+        </p>
+        <p>
+          <img src="assets/imgs/bedsore_hindi.png" />
+        </p>
+        <p style="text-align: center">
+          चित्र 1: निचली पीठ, नितम्ब पर बैडसोर की अवस्थाएँ
+        </p>
+        <p style="text-align: center">&nbsp;</p>
+        <p>
+          <strong>अलग</strong>
+          <strong>-</strong>
+          <strong>अलग</strong>
+          <strong>पोजीशन</strong>
+          <strong>या</strong>
+          <strong>करवट</strong>
+          <strong>में</strong>
+          <strong>बैडसोर</strong>
+          <strong>बनने</strong>
+          <strong>वाली</strong>
+          <strong>जगहें</strong>
+          <strong>: </strong>
+        </p>
+        <p>
+          शरीर के कुछ निश्चित भाग या जगह पर बैडसोर जल्दी से बन जाते हैं ये जगह
+          हैं:
+        </p>
+        <p>
+          <strong>सीधा</strong>
+          <strong>लेटने</strong>
+          <strong>या</strong>
+          <strong>बैठने</strong>
+          <strong>पर</strong>
+          <strong>:</strong> सिर के पीछे, कंधे, कोहनी, निचली पीठ, नितम्ब, कूल्हा
+          एवम ऐडी|
+        </p>
+        <p>
+          <strong>एक</strong>
+          <strong>तरफ</strong>
+          <strong>या</strong>
+          <strong>साइड</strong>
+          <strong>में</strong>
+          <strong>लेटने</strong>
+          <strong>पर</strong>
+          <strong>:</strong> कान, कंधे, कोहनी, नितम्ब, कूल्हा, जांघ, घुटना,
+          टांग, टखना एवम ऐडी|
+        </p>
+        <p>
+          <img src="assets/imgs/bedsore_parts_hindi.png" />
+        </p>
+        <p style="text-align: center">
+          <strong>चित्र</strong>
+          <strong> 2:</strong>
+          <strong>अलग</strong>
+          <strong>-</strong>
+          <strong>अलग</strong>
+          <strong>पोजीशन</strong>
+          <strong>या</strong>
+          <strong>करवट</strong>
+          <strong>में</strong>
+          <strong>बैडसोर</strong>
+          <strong>बनने</strong>
+          <strong>वाली</strong>
+          <strong>जगहें</strong>
+        </p>
+      </div>
+
+      <div class="formControl" text-wrap>
+        <ion-label stacked style="padding-bottom: 20px">
+          {{'SYMPTOMS_HAS_BEDSORE' | translate}} </ion-label
+        ><br /><br />
+        <ion-toggle [(ngModel)]="symptomsData.has_bedsore"></ion-toggle>
+      </div>
+
+      <div class="formControl">
+        <ion-label color="primary" stacked
+          >{{'SYMPTOMS_NO_OF_DAYS' | translate}}</ion-label
+        >
+        <ion-input
+          [disabled]="!symptomsData.has_bedsore"
+          [(ngModel)]="symptomsData.bedsore_days"
+          type="tel"
+          placeholder="{{'SYMPTOMS_DAYS' | translate}}"
+        ></ion-input>
+      </div>
+
+      <div *ngIf="symptomsData.has_bedsore">
+        <div class="formControl" style="border-bottom: 0px !important">
+          <ion-label color="primary" stacked
+            >{{'SYMPTOMS_UPLOAD_BEDSORE_IMAGE' | translate}}</ion-label
+          >
+        </div>
+
+        <img
+          style="width: 200px"
+          *ngIf="!symptomsData.bedsore_photo"
+          (click)="presentActionSheet()"
+          src="assets/imgs/image_placeholder.png"
+        />
+
+        <img
+          style="width: 200px"
+          *ngIf="symptomsData.bedsore_photo"
+          (click)="presentActionSheet()"
+          src="{{webUrl}}{{symptomsData.bedsore_photo}}"
+        />
+      </div>
+    </div>
+
+    <div *ngIf="currentSectionType == 'SYMPTOMS_HAS_SHOULDER_PAIN'">
+      <div class="formControl" text-wrap>
+        <ion-label stacked style="padding-bottom: 20px">
+          {{'SYMPTOMS_HAS_SHOULDER_PAIN' | translate}} </ion-label
+        ><br /><br />
+        <ion-toggle [(ngModel)]="symptomsData.has_shoulder_pain"></ion-toggle>
+      </div>
+      <div class="formControl">
+        <ion-label color="primary" stacked
+          >{{'SYMPTOMS_NO_OF_DAYS' | translate}}</ion-label
+        >
+        <ion-input
+          [disabled]="!symptomsData.has_shoulder_pain"
+          [(ngModel)]="symptomsData.shoulder_pain_days"
+          type="tel"
+          placeholder="{{'SYMPTOMS_DAYS' | translate}}"
+        ></ion-input>
+      </div>
+    </div>
+
+    <div *ngIf="currentSectionType == 'SYMPTOMS_HAS_LIMB_WEAKNESS'">
+      <div class="formControl" text-wrap>
+        <ion-label stacked style="padding-bottom: 20px"
+          >{{'SYMPTOMS_HAS_LIMB_WEAKNESS' | translate}}</ion-label
+        ><br /><br />
+        <ion-toggle [(ngModel)]="symptomsData.has_limb_weakness"></ion-toggle>
+      </div>
+
+      <div class="formControl">
+        <ion-label color="primary" stacked
+          >{{'SYMPTOMS_NO_OF_DAYS' | translate}}</ion-label
+        >
+        <ion-input
+          [disabled]="!symptomsData.has_limb_weakness"
+          [(ngModel)]="symptomsData.limb_weakness_days"
+          type="tel"
+          placeholder="{{'SYMPTOMS_DAYS' | translate}}"
+        ></ion-input>
+      </div>
+
+      <div class="formControl" *ngIf="symptomsData.has_limb_weakness">
+        <ion-label>{{'SYMPTOMS_WHICH_SIDE' | translate}}</ion-label>
+        <ion-select
+          okText="{{'ALERT_OK' | translate}}"
+          cancelText="{{'ALERT_CANCEL' | translate}}"
+          [(ngModel)]="symptomsData.limb_weakness_side"
+        >
+          <ion-select-option value="left"
+            >{{'SYMPTOMS_WHICH_SIDE_LEFT' | translate}}</ion-select-option
+          >
+          <ion-select-option value="right"
+            >{{'SYMPTOMS_WHICH_SIDE_RIGHT' | translate}}</ion-select-option
+          >
+          <ion-select-option value="both"
+            >{{'SYMPTOMS_WHICH_SIDE_BOTH' | translate}}</ion-select-option
+          >
+        </ion-select>
+      </div>
+    </div>
+
+    <div *ngIf="currentSectionType == 'SYMPTOMS_HAS_BAD_SMELL_MOUTH'">
+      <div class="formControl" text-wrap>
+        <ion-label stacked style="padding-bottom: 20px">
+          {{'SYMPTOMS_HAS_BAD_SMELL_MOUTH' | translate}} </ion-label
+        ><br /><br />
+        <ion-toggle [(ngModel)]="symptomsData.has_bad_smell"></ion-toggle>
+      </div>
+      <div class="formControl">
+        <ion-label color="primary" stacked
+          >{{'SYMPTOMS_NO_OF_DAYS' | translate}}</ion-label
+        >
+        <ion-input
+          [disabled]="!symptomsData.has_bad_smell"
+          [(ngModel)]="symptomsData.bad_smell_days"
+          type="tel"
+          placeholder="{{'SYMPTOMS_DAYS' | translate}}"
+        ></ion-input>
+      </div>
+    </div>
+
+    <div *ngIf="currentSectionType == 'SYMPTOMS_HAS_FEEDING_TUBE'">
+      <div class="formControl" text-wrap>
+        <ion-label stacked style="padding-bottom: 20px">
+          {{'SYMPTOMS_HAS_FEEDING_TUBE' | translate}} </ion-label
+        ><br /><br />
+        <ion-toggle [(ngModel)]="symptomsData.has_feeding_tube"></ion-toggle>
+      </div>
+    </div>
+
+    <div *ngIf="currentSectionType == 'SYMPTOMS_HAS_URNIARY_CATHETER'">
+      <div class="formControl" text-wrap>
+        <ion-label stacked style="padding-bottom: 20px">
+          {{'SYMPTOMS_HAS_URNIARY_CATHETER' | translate}} </ion-label
+        ><br /><br />
+        <ion-toggle
+          [(ngModel)]="symptomsData.has_urinary_catheter"
+        ></ion-toggle>
+      </div>
+    </div>
+
+    <div *ngIf="currentSectionType == 'SYMPTOMS_HAS_TRACHEOSTOMY_TUBE'">
+      <div class="formControl" text-wrap>
+        <ion-label stacked style="padding-bottom: 20px">
+          {{'SYMPTOMS_HAS_TRACHEOSTOMY_TUBE' | translate}} </ion-label
+        ><br /><br />
+        <ion-toggle
+          [(ngModel)]="symptomsData.has_tracheostomy_tube"
+        ></ion-toggle>
+      </div>
+    </div>
+
+    <div *ngIf="currentSectionType == 'SYMPTOMS_HAS_DIFFICULTY_SPEECH'">
+      <div class="formControl" text-wrap>
+        <ion-label stacked style="padding-bottom: 20px">
+          {{'SYMPTOMS_HAS_DIFFICULTY_SPEECH' | translate}} </ion-label
+        ><br /><br />
+        <ion-toggle
+          [(ngModel)]="symptomsData.has_difficulty_speech"
+        ></ion-toggle>
+      </div>
+    </div>
+
+    <div
+      *ngIf="currentSectionType == 'SYMPTOMS_HAS_LIMB_SPACTICITY_CONTRACTURE'"
+    >
+      <div class="formControl" text-wrap>
+        <ion-label stacked style="padding-bottom: 20px">
+          {{'SYMPTOMS_HAS_LIMB_SPACTICITY_CONTRACTURE' | translate}} </ion-label
+        ><br /><br />
+        <ion-toggle [(ngModel)]="symptomsData.has_limb_spacticity"></ion-toggle>
+      </div>
+
+      <div class="formControl" *ngIf="symptomsData.has_limb_spacticity">
+        <ion-label color="primary" stacked
+          >{{'SYMPTOMS_DURATION_SPACTICITY' | translate}}</ion-label
+        >
+        <ion-input
+          [disabled]="!symptomsData.has_limb_spacticity"
+          [(ngModel)]="symptomsData.limb_spacticity_days"
+          type="tel"
+          placeholder="{{'SYMPTOMS_DAYS' | translate}}"
+        ></ion-input>
+      </div>
+
+      <div class="formControl" *ngIf="symptomsData.has_limb_spacticity">
+        <ion-label>{{'SYMPTOMS_SPACTICITY_WHICH_SIDE' | translate}}</ion-label>
+        <ion-select
+          okText="{{'ALERT_OK' | translate}}"
+          cancelText="{{'ALERT_CANCEL' | translate}}"
+          [(ngModel)]="symptomsData.limb_spacticity_side"
+        >
+          <ion-select-option value="left"
+            >{{'SYMPTOMS_WHICH_SIDE_LEFT' | translate}}</ion-select-option
+          >
+          <ion-select-option value="right"
+            >{{'SYMPTOMS_WHICH_SIDE_RIGHT' | translate}}</ion-select-option
+          >
+          <ion-select-option value="both"
+            >{{'SYMPTOMS_WHICH_SIDE_BOTH' | translate}}</ion-select-option
+          >
+        </ion-select>
+      </div>
+
+      <div class="formControl" *ngIf="symptomsData.has_limb_spacticity">
+        <ion-label color="primary" stacked
+          >{{'SYMPTOMS_SPACTICITY_SIDE_NAME' | translate}}</ion-label
+        >
+        <ion-input
+          [(ngModel)]="symptomsData.limb_spacticity_side_name"
+          type="text"
+          placeholder="{{'SYMPTOMS_SPACTICITY_SIDE_NAME_PLACEHOLDER' | translate}}"
+        ></ion-input>
+      </div>
+    </div>
+
+    <div *ngIf="currentSectionType == 'SYMPTOMS_OTHER_HEALTH_PROBLEM'">
+      <div class="formControl">
+        <ion-label color="primary" stacked>
+          {{'SYMPTOMS_OTHER_HEALTH_PROBLEM' | translate}}</ion-label
+        >
+        <ion-textarea
+          rows="5"
+          [(ngModel)]="symptomsData.other_problems"
+          placeholder="{{'SYMPTOMS_TYPE_PROBLEMS' | translate}}"
+        ></ion-textarea>
+      </div>
+    </div>
+
+    <br />
+    <ion-button color="dark" expand="block" (click)="addUpdateSymptomsData()">
+      {{'SUBMIT' | translate}}
+    </ion-button>
+  </div>
+</ion-content>

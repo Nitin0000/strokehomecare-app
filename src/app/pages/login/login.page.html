@@ -1,0 +1,137 @@
+<ion-content [scrollEvents]="true">
+  <div class="contentBox">
+    <div class="logoSection">
+      <img src="../../../assets/imgs/logo.png" />
+    </div>
+
+    <div class="loginForm">
+
+
+      <ng-container *ngIf="currentScreen == 'enterMobileNumberSection'">
+
+        <ion-list style="background: none">
+          <div class="formControlCustom">
+            <div class="countryCode">+91</div>
+            <ion-input
+              (ionFocus)="onFocus()"
+              type="tel"
+              [(ngModel)]="sentOTPData.phone_number"
+              placeholder="{{'LOGIN_PLACEHOLDER_ENTER_NUMBER' | translate}}"
+            ></ion-input>
+          </div>
+
+          <ion-button
+            color="primary"
+            (click)="sendOTP()"
+            size="large"
+            expand="block"
+            >{{'LOGIN_BUTTON_SEND_OTP' | translate}}</ion-button
+          >
+        </ion-list>
+      </ng-container>
+
+      <ng-container *ngIf="currentScreen == 'enterVerificationCodeSection'">
+
+        <ion-text color="dark">
+          <p *ngIf="checkNewLogin">
+            {{'LOGIN_ENTER_DETAILS_TO_REGISTER' | translate}}
+          </p>
+          <p *ngIf="!checkNewLogin">{{'LOGIN_ENTER_NUMBER' | translate}}</p>
+        </ion-text>
+
+        <div class="formControlCustom" *ngIf="checkNewLogin">
+          <ion-label
+            >{{'LOGIN_CENTER' | translate}}
+            <span class="red">*</span></ion-label
+          >
+          <ion-select
+            [(ngModel)]="submitAndLoginData.centre_id"
+            mode="ios"
+            interface="popover"
+            value=""
+          >
+            <ion-select-option
+              *ngFor="let center of centres"
+              value="{{center.id}}"
+              >{{center.centre_name}}</ion-select-option
+            >
+          </ion-select>
+        </div>
+
+        <div class="formControlCustom" *ngIf="checkNewLogin">
+          <ion-label
+            >{{'LOGIN_LANGUAGE' | translate}}
+            <span class="red">*</span></ion-label
+          >
+          <ion-select
+            [(ngModel)]="submitAndLoginData.language"
+            mode="ios"
+            interface="popover"
+            value=""
+          >
+            <ion-select-option
+              *ngFor="let language of appLanguages"
+              value="{{language.value}}"
+              >{{language.name}}</ion-select-option
+            >
+          </ion-select>
+        </div>
+
+        <div
+          class="formControlCustom"
+          style="padding-left: 15px"
+          *ngIf="checkNewLogin"
+        >
+          <ion-input
+            style="border: 0px"
+            [(ngModel)]="submitAndLoginData.fullname"
+            type="text"
+            placeholder="{{'LOGIN_PLACEHOLDER_ENTER_NAME' | translate}}"
+          ></ion-input>
+        </div>
+
+        <div class="formControlCustom" style="padding-left: 15px">
+          <ion-input
+            style="border: 0px"
+            [(ngModel)]="submitAndLoginData.otp_code"
+            type="tel"
+            placeholder="Enter one time password"
+          ></ion-input>
+          <!-- <div class="countryCode" (click)="sendOTP()" style="font-size: 20px">
+            <ion-icon slot="end" name="refresh"></ion-icon>
+          </div> -->
+        </div>
+
+        <ion-button
+          color="primary"
+          (click)="submitAndLogin()"
+          size="large"
+          expand="block"
+        >
+          {{'LOGIN_BUTTON_SUBMIT_LOGIN' | translate}}
+        </ion-button>
+
+        <ion-button
+          color="primary"
+          expand="block"
+          fill="outline"
+          (click)="showScreen('enterMobileNumberSection')"
+        >
+          {{'LOGIN_BUTTON_BACK' | translate}}
+        </ion-button>
+      </ng-container>
+    </div>
+
+    <br><br>
+    <ion-row class="text-center">
+      <ion-col class="text-center"><small>Funded by ICMR</small></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="text-center">
+        <img class="pgimerlogo" width="40px" src="../../../assets/imgs/PGIMER-logo.jpg" />
+        <img class="instructlogo" width="120px" src="../../../assets/imgs/mobility.jpg" />
+        <img class="instructlogo" width="130px" src="../../../assets/imgs/instruct.png" />
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

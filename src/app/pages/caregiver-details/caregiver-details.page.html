@@ -1,0 +1,130 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{'SIDEMENU_CAREGIVER_DETAILS' | translate}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="formSection">
+    <div class="formControl">
+      <ion-label color="primary" stacked
+        >{{'FORM_FIELDS_NAME_CAREGIVER' | translate}}
+        <sup ion-text color="danger">*</sup>
+      </ion-label>
+      <ion-input
+        [(ngModel)]="careGiverData.name"
+        type="text"
+        placeholder="{{'ADD_CAREGIVER_PLACEHOLDER_CAREGIVER_NAME' | translate}}"
+      ></ion-input>
+    </div>
+
+    <div class="formControl">
+      <ion-label color="primary" stacked
+        >{{'FORM_FIELDS_AGE' | translate}}
+        <sup ion-text color="danger">*</sup>
+      </ion-label>
+      <ion-input
+        [(ngModel)]="careGiverData.age"
+        type="number"
+        placeholder="{{'ADD_CAREGIVER_PLACEHOLDER_CAREGIVER_AGE' | translate}}"
+      ></ion-input>
+    </div>
+
+    <div class="formControl">
+      <ion-label color="primary" stacked
+        >{{'FORM_FIELDS_RELATION_PATIENT' | translate}}
+        <sup ion-text color="danger">*</sup>
+      </ion-label>
+      <ion-input
+        [(ngModel)]="careGiverData.relation_with_patient"
+        type="text"
+        placeholder="{{'ADD_CAREGIVER_PLACEHOLDER_CAREGIVER_RELATION' | translate}}"
+      ></ion-input>
+    </div>
+
+    <div class="formControl">
+      <ion-label
+        >{{'FORM_FIELDS_GENDER' | translate}}
+        <sup ion-text color="danger">*</sup>
+      </ion-label>
+      <ion-select
+        okText="{{'ALERT_OK' | translate}}"
+        cancelText="{{'ALERT_CANCEL' | translate}}"
+        placeholder="{{'ADD_PATIENT_PLACEHOLDER_SELECT' | translate}}"
+        [(ngModel)]="careGiverData.gender"
+        mode="ios" interface="popover"
+      >
+        <ion-select-option value="male"
+          >{{'FORM_FIELDS_MALE' | translate}}</ion-select-option
+        >
+        <ion-select-option value="female"
+          >{{'FORM_FIELDS_FEMALE' | translate}}</ion-select-option
+        >
+      </ion-select>
+    </div>
+
+    <div class="formControl">
+      <ion-label color="primary" stacked
+        >{{'FORM_FIELDS_CONTACT_NUMBER' | translate}}
+        <sup ion-text color="danger">*</sup>
+      </ion-label>
+      <ion-input
+        [(ngModel)]="careGiverData.contact_number"
+        type="tel"
+        placeholder="{{'ADD_CAREGIVER_PLACEHOLDER_CAREGIVER_CONTACT' | translate}}"
+      ></ion-input>
+    </div>
+
+    <div class="formControl">
+      <ion-label color="primary" stacked
+        >{{'FORM_FIELDS_ADDRESS' | translate}}
+        <sup ion-text color="danger">*</sup>
+      </ion-label>
+      <ion-input
+        [(ngModel)]="careGiverData.address"
+        type="text"
+        placeholder="{{'ADD_CAREGIVER_PLACEHOLDER_CAREGIVER_ADDRESS' | translate}}"
+      ></ion-input>
+    </div>
+
+    <div class="formControl">
+      <ion-label color="primary" stacked
+        >{{'FORM_FIELDS_OCCUPATION' | translate}}
+        <sup ion-text color="danger">*</sup>
+      </ion-label>
+      <ion-input
+        [(ngModel)]="careGiverData.occupation"
+        type="text"
+        placeholder="{{'ADD_CAREGIVER_PLACEHOLDER_CAREGIVER_OCCUPATION' | translate}}"
+      ></ion-input>
+    </div>
+
+    <div class="formControl">
+      <ion-label color="primary" stacked
+        >{{'FORM_FIELDS_EDUCATION' | translate}}
+        <sup ion-text color="danger">*</sup>
+      </ion-label>
+      <ion-input
+        [(ngModel)]="careGiverData.education"
+        type="text"
+        placeholder="{{'ADD_CAREGIVER_PLACEHOLDER_CAREGIVER_QUALIFICATION' | translate}}"
+      ></ion-input>
+    </div>
+
+    <div class="formControl" text-wrap style="padding-bottom: 10px !important">
+      <ion-label stacked style="padding-bottom: 10px"
+        >{{'FORM_FIELDS_PAST_EXPERIENCE' | translate}}</ion-label
+      >
+      <ion-toggle [(ngModel)]="careGiverData.previous_training"></ion-toggle>
+    </div>
+
+    <span ion-text color="lightdark">*{{'REQUIRED_FIELDS' | translate}}</span>
+    <br />
+    <ion-button color="dark" expand="block" (click)="addUpdateCareGiverData()">
+      {{'SUBMIT' | translate}}
+    </ion-button>
+  </div>
+</ion-content>

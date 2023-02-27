@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button (click)="openSideMenu()">
+        <ion-icon slot="icon-only" name="person-circle"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>{{'HOME_PAGE_TITLE' | translate}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="videosection" (click)="playStrokeVideo()">
+    <img class="play_icon" src="assets/imgs/play_icon.png" />
+    <img class="back_image" src="assets/imgs/videoplay.jpg" />
+  </div>
+
+  <ion-list lines="none">
+    <ion-item text-wrap (click)="gotoSymptomsPage()">
+      {{'HOME_CHECK_SYMPTOMS' | translate}}
+      <ion-icon name="chevron-forward" slot="end"></ion-icon>
+    </ion-item>
+    <ion-item text-wrap (click)="gotoVideosPage()">
+      {{'HOME_TAKING_CARE_HOME' | translate}}
+      <ion-icon name="chevron-forward" slot="end"></ion-icon>
+    </ion-item>
+
+    <ion-item text-wrap (click)="gotoFeedbackPage()">
+      {{'HOME_FEEDBACK' | translate}}
+      <ion-icon name="chevron-forward" slot="end"></ion-icon>
+    </ion-item>
+  </ion-list>
+
+  <br /><br />
+  <ion-row>
+    <ion-col class="text-center">
+      <img
+        class="instructlogo"
+        width="160px"
+        src="../../../assets/imgs/mobility.jpg"
+      /><br />
+      <img
+        class="pgimerlogo"
+        width="40px"
+        src="../../../assets/imgs/PGIMER-logo.jpg"
+      />
+      &nbsp;&nbsp;&nbsp;
+      <img
+        class="instructlogo"
+        width="130px"
+        src="../../../assets/imgs/instruct.png"
+      />
+    </ion-col>
+  </ion-row>
+</ion-content>

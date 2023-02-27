@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{'HOME_TAKING_CARE_HOME' | translate}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+
+    <ng-container *ngFor="let category of videos; let i = index">
+
+      <ion-item (click)="showVideos(i)" lines="none" >      
+        <ion-label class="ion-text-wrap">
+          <ion-text color="primary"><h2>{{category.title}}</h2></ion-text>
+          <p>{{category.videos.length}} {{category.videos.length == 1? 'video': 'videos'}}</p>
+        </ion-label>
+        <ion-icon [name]="category.icon" slot="end"></ion-icon>
+      </ion-item>
+      <div class="videosSection" *ngIf="category.selected">
+        <ion-grid>
+          <ion-row *ngFor="let videos of currentVideosChunked">
+            <ion-col size="6" *ngFor="let video of videos">
+              <div class="videoBox" (click)="playVideo(video)">
+                <div class="imageBox">
+                   <img class="videoThumbnail" src="https://img.youtube.com/vi/{{video.video_id}}/0.jpg" />
+                    <div class="playIcon">
+                      <img src="../../../assets/imgs/play-icon.png" />
+                    </div>
+                </div>
+                <h2>{{video.title}}</h2>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+     
+      </div>
+
+    </ng-container>
+
+
+    </ion-list>
+    <br><br><br><br><br>
+</ion-content>

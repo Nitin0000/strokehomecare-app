@@ -1,0 +1,14 @@
+ion-content {
+  --background: #fffbf7; /* Old browsers */  
+}
+
+ion-list{
+    margin-top: 0px;
+    background: none !important;
+    ion-item{
+      padding: 10px 0px 10px 0px;
+      background: #fff !important;
+      border-bottom: 1px solid #eee;
+      margin-bottom: 10px;
+    }  
+  }

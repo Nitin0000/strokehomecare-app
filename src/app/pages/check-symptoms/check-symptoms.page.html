@@ -1,0 +1,88 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{'HOME_CHECK_SYMPTOMS' | translate}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list lines="none">
+    <ion-item text-wrap (click)="gotoSymptomsAnswerPage('SYMPTOMS_HAS_BEDSORE')">
+      {{'SYMPTOMS_HAS_BEDSORE' | translate}}
+      <ion-icon name="chevron-forward" slot="end"></ion-icon>
+    </ion-item>
+
+    <ion-item
+      text-wrap
+      (click)="gotoSymptomsAnswerPage('SYMPTOMS_HAS_FEEDING_TUBE')"
+    >
+      {{'SYMPTOMS_HAS_FEEDING_TUBE' | translate}}
+      <ion-icon name="chevron-forward" slot="end"></ion-icon>
+    </ion-item>
+
+    <ion-item
+      text-wrap
+      (click)="gotoSymptomsAnswerPage('SYMPTOMS_HAS_URNIARY_CATHETER')"
+    >
+      {{'SYMPTOMS_HAS_URNIARY_CATHETER' | translate}}
+      <ion-icon name="chevron-forward" slot="end"></ion-icon>
+    </ion-item>
+
+    <ion-item
+      text-wrap
+      (click)="gotoSymptomsAnswerPage('SYMPTOMS_HAS_TRACHEOSTOMY_TUBE')"
+    >
+      {{'SYMPTOMS_HAS_TRACHEOSTOMY_TUBE' | translate}}
+      <ion-icon name="chevron-forward" slot="end"></ion-icon>
+    </ion-item>
+
+    <ion-item
+      text-wrap
+      (click)="gotoSymptomsAnswerPage('SYMPTOMS_HAS_BAD_SMELL_MOUTH')"
+    >
+      {{'SYMPTOMS_HAS_BAD_SMELL_MOUTH' | translate}}
+      <ion-icon name="chevron-forward" slot="end"></ion-icon>
+    </ion-item>
+
+    <ion-item
+      text-wrap
+      (click)="gotoSymptomsAnswerPage('SYMPTOMS_HAS_SHOULDER_PAIN')"
+    >
+      {{'SYMPTOMS_HAS_SHOULDER_PAIN' | translate}}
+      <ion-icon name="chevron-forward" slot="end"></ion-icon>
+    </ion-item>
+
+    <ion-item
+      text-wrap
+      (click)="gotoSymptomsAnswerPage('SYMPTOMS_HAS_LIMB_WEAKNESS')"
+    >
+      {{'SYMPTOMS_HAS_LIMB_WEAKNESS' | translate}}
+      <ion-icon name="chevron-forward" slot="end"></ion-icon>
+    </ion-item>
+
+    <ion-item
+      text-wrap
+      (click)="gotoSymptomsAnswerPage('SYMPTOMS_HAS_LIMB_SPACTICITY_CONTRACTURE')"
+    >
+      {{'SYMPTOMS_HAS_LIMB_SPACTICITY_CONTRACTURE' | translate}}
+      <ion-icon name="chevron-forward" slot="end"></ion-icon>
+    </ion-item>
+
+    <ion-item
+      text-wrap
+      (click)="gotoSymptomsAnswerPage('SYMPTOMS_HAS_DIFFICULTY_SPEECH')"
+    >
+      {{'SYMPTOMS_HAS_DIFFICULTY_SPEECH' | translate}}
+      <ion-icon name="chevron-forward" slot="end"></ion-icon>
+    </ion-item>
+
+    <ion-item
+      text-wrap
+      (click)="gotoSymptomsAnswerPage('SYMPTOMS_OTHER_HEALTH_PROBLEM')"
+    >
+      {{'SYMPTOMS_OTHER_HEALTH_PROBLEM' | translate}}
+      <ion-icon name="chevron-forward" slot="end"></ion-icon>
+    </ion-item>
+  </ion-list>
+</ion-content>

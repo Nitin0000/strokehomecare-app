@@ -1,0 +1,29 @@
+ion-content{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e7843a+0,d36652+100 */
+    background: #e7843a; /* Old browsers */
+    background: -moz-linear-gradient(top,  #e7843a 0%, #d36652 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #e7843a 0%,#d36652 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #e7843a 0%,#d36652 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7843a', endColorstr='#d36652',GradientType=0 ); /* IE6-9 */
+
+}
+
+.no_internet{
+    padding-top: 35%;
+    text-align: center;
+    color: #fff;
+    h2{
+        font-family: 'Lato Bold';
+    }
+    p{
+        padding-left: 30px;
+        padding-right: 30px;
+        font-family: 'Lato Regular';
+    }
+    ion-icon{
+        font-size: 100px;
+    }
+    button{
+        margin-top: 50px;
+    }
+}
